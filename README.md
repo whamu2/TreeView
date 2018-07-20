@@ -39,8 +39,10 @@ dependencies {
 
 Step 3. use
 
+```java
 private TreeRecyclerAdapter mTreeRecyclerAdapter = new TreeRecyclerAdapter(TreeRecyclerType.SHOW_ALL);
 
 List<TreeItem> treeItemList = ItemHelperFactory.createTreeItemList(strings, DemoTreeItemGroup.class, null);
 mRecyclerView.setAdapter(mTreeRecyclerAdapter);
 mTreeRecyclerAdapter.getItemManager().replaceAllItem(treeItemList);
+```
